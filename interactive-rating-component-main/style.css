@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color:  hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#container{ /*DIV PARENT*//*Mudando o display para flex*/
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.conteudo{  /*DIV CHILD*/
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    height: 375px;
+    width: 375px;
+    margin-top: 200px;
+    padding: 30px;
+}
+
+.conteudo h2{
+    background-color: hsl(213, 19%, 18%);
+    margin-bottom: 10px;
+}
+
+
+#container2{ /*DIV PARENT*//*Mudando o display para flex*/
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.obgcont{
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    height: 500px;
+    width: 450px;
+    margin-top: 200px;
+    padding: 30px;
+    text-align: center;
+    color: hsl(216, 12%, 54%);
+}
+.obgcont img,p{
+    background-color:  hsl(213, 19%, 18%);
+}
+
+.obgcont p{
+    background-color: hsl(216, 12%, 54%);
+    color: orange;
+    margin: 20px 0px 0px 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.obgcont h1{
+    background-color: hsl(213, 19%, 18%);
+    margin-bottom: 5px;
+}
+
+
+/*Mudando a cor da imagem e do button*/
+
+.botao1,
+.botao2,
+.botao3,
+.botao4,
+.botao5{
+    background-color: hsl(216, 12%, 54%);
+    border-radius: 70%;
+}
+
+/*Mudando o tamanho do button */
+
+.botao1,
+.botao2,
+.botao3,
+.botao4,
+.botao5{
+    height: 50px;
+    margin: 10px 5px 5px 1px;
+    width: 50px;
+    padding: 2px;
+    border-color: white;
+    border: none;
+}
+
+/*Mudando a cor dos botoes quando tem o focus*/
+.botao1:focus,
+.botao2:focus,
+.botao3:focus,
+.botao4:focus,
+.botao5:focus{
+    background-color: black;
+}
+
+/*Mudando a cor quando o mouse passa por cimma dos botões*/
+.botao1:hover,
+.botao2:hover,
+.botao3:hover,
+.botao4:hover,
+.botao5:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+#submit:hover,
+.link:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*Estilizando o botão submit, aumentado o tamanho e mudando a borda*/
+#submit{
+    height: 30px;
+    width: 300px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px;
+}
+
+.link{
+    background-color: hsl(25, 97%, 53%);
+}
+
+
+/*Centralizando o footer*/
+.attribution{
+    display: inline-block;
+    margin-left: 815px;
+    text-align: center;
+}
+
+/*MUdando a cor do texto*/
+p{
+    color: hsl(217, 12%, 63%);
+}
