@@ -1,0 +1,140 @@
+.attribution{
+    font-size: 11px; text-align: center;
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/images/bg-intro-desktop.png);
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+}
+/*Criando o container dos conteudos*/
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilizando o conteudo 1*/
+#cmptxt{
+    height: 50vh;
+    width: 50vw;
+    padding: 330px 50px 50px 170px;
+    color: white;
+}
+/*Aumentando o tamanho do h1*/
+#cmptxt h1{
+    font-size: 50px;
+}
+/*Criando o campo 1*/
+#cmpform{
+    height: 100vh;
+    width: 60vw;
+    margin: 150px 0px 0px 50px;
+    padding: 270px 1px 1px 100px;
+}
+
+/*estilizando o botao de inscrição*/
+.inscricao{
+    height: 5vh;
+    width: 35vw;
+    padding: 15px 15px 0px 15px;
+    margin: 0px 0px 20px 0px;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    border-radius: 13px;
+    color: white;
+}
+
+/*Criando o tamanho do formulario*/
+#formulario{
+    height: 53vh;
+    width: 35vw;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+/*Estilizando o input do formulario*/
+#formulario input{
+    width: 30vw;
+    padding: 15px 15px 15px 15px;
+    margin: 13px 15px 15px 15px;
+    border-radius: 5px;
+}
+
+/*Modulando o buton do formulario e estilizando*/
+#formulario button{
+    height: 5vh;
+    width: 32vw;
+    margin: 15px 15px 0px 15px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border-radius: 5px;
+}
+
+/*Diminuindo o tamanho do paragrafo */
+#formulario p{
+    margin: 2;
+    font-size: 10px;
+    text-align: center;
+}
+
+/*Mudando a cor dos termos e serviços*/
+#formulario b{
+    color: hsl(0, 100%, 74%);
+}
+
+/*Criando o botão de erro*/
+#erroricn1,
+#erroricn2,
+#erroricn3,
+#erroricn4{
+    display: none;
+    position: absolute;
+}
+
+
+/*REDIMENSIONANDO O FORMULARIO*/
+@media(max-width: 900px){
+    #container{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        padding: 0;
+    }
+    #cmptxt{
+        width: 65vw;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #cmpform{
+        width: 65vw;
+        padding: 0px 0px 0px 50px;
+        margin: 0px;
+    }
+
+    .inscricao{
+        width: 50vw;
+        float: left;
+    }
+
+    #formulario{
+        width: 50vw;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+}
