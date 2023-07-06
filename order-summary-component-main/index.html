@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body{
+      background-image: url(/images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      /*background-color: hsl(225, 100%, 94%);*/
+    }
+
+    .filha {
+      background-color: white;
+      height: 60vh;
+      width: 400px;
+      text-align: center;
+      border-radius: 15px;
+    }
+    
+    
+    .box{
+      background-color: hsl(225, 100%, 98%);
+      margin-bottom: 10px;
+    }
+
+    img{
+      width: 400px;
+      border-radius: 15px 15px 0px 0px;
+    }
+
+    /*Estilizando a div de comprar*/
+    .btn1{
+      height: 60px;
+      background-color:  hsl(225, 100%, 98%);
+      margin: 10px 0px 20px 0px;
+      border: none;
+      border-radius: 15px;
+    }
+
+    .left{
+      padding: 10px;
+      float: left;
+    }
+    /*Redimensionando a imagem da musica*/
+    .btn_music{
+      width: 10%;
+    }
+
+    .link{
+      margin-top: 100px;
+    }
+    .btn2{
+      
+      display:block;
+      height: 50px;
+      width: 300px;
+      margin: auto;
+      border-radius: 15px;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      border: none;
+      box-shadow: 1px 5px hsl(245, 53%, 70%);
+      transition: 2ms;
+    }
+
+
+    .btn3{
+      background-color: white;
+      color: hsl(245, 53%, 70%);
+      border: none;
+      margin-top: 10px;
+      font-weight: bolder;
+    }
+
+    /*MUDAR A COR QND O USUARIO PASSA O MOUSE*/
+
+    h1{
+      padding-bottom: 10px;
+    }
+    a:link{
+      text-decoration: none;
+    }
+    a:hover{
+     color: hsl(245, 75%, 52%);
+    }
+    .btn2:hover{
+      background-color:  hsl(245, 53%, 70%);
+      cursor: pointer;
+      
+    }
+
+    .btn3:hover{
+      color: hsl(223, 47%, 23%);
+      cursor: pointer;      
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="filha">
+
+      <img src="/images/illustration-hero.svg" alt="" srcset="">
+
+      <h1>Order Summary</h1>
+
+      You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!
+
+      <!-- 
+         <div class="box">
+       <p class="left">Annual Plan
+        $59.99/year
+      </p> 
+       <a href="">Change</a> 
+      </div>
+       -->
+       <button class="btn1">
+         
+         <div class="left">
+           <img class="btn_music" src="/images/icon-music.svg" alt="" srcset=""> 
+           Annual Plan
+           $59.99/year
+          </div>
+        <a class="link" href="">Change</a> 
+        
+       </button>
+     
+
+
+      <button class="btn2">Proceed to Payment</button>
+      <button class="btn3">Cancel Order</button>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
