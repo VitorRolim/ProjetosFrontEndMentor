@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+    /*Criando o container*/
+    #container {
+      display: flex;
+      height: 1001vh;
+      flex-wrap: wrap;
+      width: 100vw;
+      border: 5px solid purple;
+      background-color: hsl(0, 0%, 98%);
+    }
+
+    /*box texto*/
+    .text {
+      height: 20vh;
+      width: 32vw;
+      margin: 100px 300px 50px 620px;
+      text-align: center;
+    }
+
+    .fonte {
+      font-weight: 100;
+      color: gray;
+    }
+
+    /*Recursividade das boxes*/
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+      height: 30vh;
+      width: 20vw;
+      padding: 20px;
+      background-color: white;
+      box-shadow: -15px 15px 10px -15px rgb(129, 129, 131);
+    }
+
+    /*box 1 - supervisor*/
+    .box1 {
+      border-top: 3px solid hsl(180, 62%, 55%);
+      margin: 0px 10px 0px 320px;
+    }
+
+    /*box 2 - Team builder*/
+    .box2 {
+      border-top: 3px solid hsl(0, 78%, 62%);
+      margin: -170px 0px 0px 40px;
+    }
+
+    /*Box 3 - Team Calculator*/
+    .box3 {
+      margin: 0px 0px 0px 50px;
+      border-top: 3px solid hsl(212, 86%, 64%);
+    }
+
+    /*box 4 - Team Karma*/
+    .box4 {
+      margin: -250px 0px 0px 710px;
+      border-top: 3px solid hsl(34, 97%, 64%);
+    }
+
+    /*Redimensionando image do box 1,2,3,4*/
+    .imgTeamBuilder,
+    .imgTeamSupervisor,
+    .imgTeamKarma,
+    .imgTeamCalculator {
+      float: right;
+      margin-top: 70px;
+    }
+
+    /*-------------------------------------RESPONSIVIDADE--------------------------------------------------------------*/
+    @media (min-width:910px) and (max-width: 1500px) {
+      #container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+      }
+
+      .text {
+        margin: 0px 0px 70px 0px;
+      }
+
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        height: 30vh;
+        margin: 0px 0px 50px 0px;
+      }
+
+    }
+
+    @media(min-width:657px) and  (max-width: 909px) {
+      #container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300vh;
+      }
+
+      .text {
+        margin: 0px 0px 150px 0px;
+      }
+
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        height: 50vh;
+        margin: 0px 0px 50px 0px;
+      }
+    }
+
+  @media(max-width:657px){
+    #container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300vh;
+      }
+
+      .text {
+        margin: 0px 0px 300px 0px;
+      }
+
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        height: 55vh;
+        width: 30vw;
+        margin: 0px 0px 50px 0px;
+      }
+  }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="text">
+      <h1 class="fonte">
+        Reliable, efficient delivery <br></h1>
+      <h1>Powered by Technology</h1>
+
+      
+      <p>Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful</p>
+    </div>
+    <div class="box1">
+      <h3>Supervisor</h3>
+      <p>Monitors activity to identify project roadblocks</p>
+      <img class="imgTeamSupervisor" src="/images/icon-supervisor.svg" alt="icone team Supervisor" srcset="">
+    </div>
+
+    <div class="box2">
+
+      <h3>Team Builder</h3>
+      <p>Scans our talent network to create the optimal team for your project</p>
+      <img class="imgTeamBuilder" src="/images/icon-team-builder.svg" alt="icone team builder" srcset="">
+    </div>
+
+    <div class="box3">
+      <h3>Calculator</h3>
+      <p>Uses data from past projects to provide better delivery estimates</p>
+      <img class="imgTeamCalculator" src="/images/icon-calculator.svg" alt="icone team Calculator" srcset="">
+    </div>
+
+    <div class="box4">
+
+      <h3>Karma</h3>
+      <p>Regularly evaluates our talent to ensure quality</p>
+      <img class="imgTeamKarma" src="/images/icon-karma.svg" alt="icone team Karma" srcset="">
+    </div>
+
+  </div>
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
