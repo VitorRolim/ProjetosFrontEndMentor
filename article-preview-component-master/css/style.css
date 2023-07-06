@@ -1,0 +1,146 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 340px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    background-color: hsl(210, 46%, 95%);
+  }
+
+  /*Criando o container*/
+  #container {
+    display: flex;
+    height: 40.5vh;
+    width: 50vw;
+    background-color: white;
+    margin: 200px 10px 10px 450px;
+    border: 1px solid red;
+  }
+
+  /*Inserido a imagem e personalizando*/
+  .imagem {
+    background-image: url(/images/drawers.jpg);
+    height: 40vh;
+    width: 60vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*Separando o texto da imagem*/
+  .texto {
+    padding: 50px;
+  }
+
+  /*Diminuindo o tamanho do display*/
+  .profile {
+    display: inline-block;
+  }
+
+  /*Diminuindo o tamanho do perfil e arredondando*/
+  .imagem_michelle {
+    width: 2vw;
+    border-radius: 50px;
+    margin-right: 20px;
+  }
+
+  /*criando uma lista não ordenada para por o texto ao lado da imagem*/
+  ul {
+    float: right;
+    list-style-type: none;
+  }
+
+
+  /*Separando os textos*/
+  p {
+    margin: 20px 0px 25px 0px;
+  }
+
+  /*Personalizando o botão de compartilhar*/
+  .share {
+    padding: 10px;
+    float: right;
+    color: white;
+    border-radius: 50px;
+    background-color: hsl(210, 46%, 95%);
+  }
+
+  
+  
+
+  /*Personalizando o button*/
+  button {
+    border: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: aliceblue;  
+}
+
+  /*Criando o balão de texto e estilizando*/
+  #balao {
+    width: 250px;
+    background: hsl(217, 19%, 35%);
+    padding: 10px;
+    margin-left: 327px;
+    margin-top: -120px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 35px;
+    color: cyan;
+    position: absolute;
+    display: none;
+  }
+
+  /* criando o triangulo para baixo */
+  #balao:before {
+    content: "";
+    position: absolute;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid hsl(217, 19%, 35%);
+    right: 97px;
+    top: 55px;
+  }
+
+  @media(min-width:950px) and (max-width:1400px){
+     #container{
+       display: flex;
+      flex-direction: column;
+      margin: 200px 10px 10px 300px;
+    }
+    .imagem{
+      width: 50vw;
+    }
+    .profile{
+      display: none;
+    }
+    #balao{
+      display: block;
+      width: 400px;
+      background: hsl(217, 19%, 35%);
+      padding: 10px;
+      margin-left: 0px;
+      margin-top: 0px;
+      text-align: center;
+      font-size: 35px;
+      border-radius: 0px;
+      color: cyan;
+    }
+    #balao:before{
+      position: relative;
+      top: 50px;
+    }
+  }
