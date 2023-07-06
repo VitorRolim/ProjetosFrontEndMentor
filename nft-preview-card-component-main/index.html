@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; font-family: 'Montserrat', sans-serif;}
+    .attribution { font-size: 11px; text-align: center; background-color: hsl(217, 54%, 11%);color: white;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    #container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: hsl(217, 54%, 11%);
+    }
+    .filha{
+        height: 60.2vh;
+        width: 20vw;
+        background-color: hsl(216, 50%, 16%);
+        text-align: center;
+        color: hsl(215, 32%, 50%);
+        border-radius: 15px;
+    }
+    .img1{
+      height: 30vh;
+      width: 15vw;
+      border-radius: 15px;
+      margin-top: 10px;
+    }
+    .img1:hover{
+      background-image: url(images/icon-view.svg);
+      background-color: hsl(178, 100%, 50%);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      
+    }
+    h1{
+      color: aliceblue;
+    }
+    h1:hover{
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+    .left{
+      float: left;
+      padding-left: 42px;
+      color: hsl(178, 100%, 50%);
+    }
+    .right{
+      float: right;
+      padding-right: 50px;
+    }
+    .paragrafo{
+      text-align: start;
+      padding-left: 42px;
+      margin-bottom: 10px;
+    }
+    .par1{
+      text-align: start;
+      padding-left: 42px;
+    }
+    .img2{
+      width: 30px;
+      height: 30px;
+      border: 1px solid white;
+      border-radius: 15px;
+      text-align: center;
+      float: left;
+      margin-right: 10px;
+    }
+    .clock{
+      padding-right: 2px;
+    }
+    .etherum{
+      padding-right: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+<div id="container">
+    <div class="filha">
+
+      <img class="img1" src="/images/image-equilibrium.jpg" alt="">
+      <h1>Equilibrium #3429</h1>
+
+      <p class="par1"> Our Equilibrium collection promotes  balance and calm.</p> 
+      <span class="right"><img class="clock" src="/images/icon-clock.svg" alt="clock" srcset=""> 3 days left</span> 
+      <span class="left"><img class="etherum" src="/images/icon-ethereum.svg" alt="" srcset="">0.041 ETH</span>  <br><br>
+      _____________________________________
+      
+      
+      <p class="paragrafo"><img class="img2" src="/images/image-avatar.png" alt="" srcset="">
+        Creation of Jules Wyvern</p> 
+      
+    </div>  
+
+</div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Vitor Rolim</a>.
+  </div>
+</body>
+</html>
