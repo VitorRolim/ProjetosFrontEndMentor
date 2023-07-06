@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: linear-gradient( 
+      hsl(273, 75%, 66%),
+      hsl(240, 73%, 65%));
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /*Criando o container*/
+    #container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid red;
+      height: 100vh;
+      width: 100vw;
+      
+    }
+
+    /*Criando o conteudo dentro do container*/
+    .conteudo{
+      height: 58vh;
+      width: 50vw;
+      border-radius: 50px;
+      background-color: white;
+    }
+
+    /*Criando e separando a image do text*/
+    .imagem{
+      display: inline-block;
+      margin-top: 100px;
+    }
+
+    /*Criando e separando o text da image */
+    .conteudo_texto{
+      width: 30vw;
+      float: right;
+    }
+
+    /*Dimensionando a imagem da mulher*/
+    .imagem_mulher{
+      position: absolute;
+      height: 30vh;
+      width: 15vw;
+      padding: 0px 0px 0px 0px;
+      z-index: 1;
+    }
+
+    /*Dimensionando a imagem da caixa para ficar acima da image mulher*/
+    .imagem_caixa{
+      position: absolute;
+      margin-bottom: 1000px;
+      padding: 380px 0px 0px 380px;
+      z-index: 2;
+    }
+
+    
+
+    p:hover,
+    button:hover{
+      cursor: pointer;
+      color: hsl(14, 88%, 65%);
+    }
+
+    button{
+      border: none;
+      background-color: white;
+
+    }
+  </style>
+</head>
+<body>
+  <img class="imagem_caixa" src="/images/illustration-box-desktop.svg" alt="">
+<div id="container">
+  <div class="conteudo">
+    
+    <div class="imagem">
+      <img class="imagem_mulher" src="/images/illustration-woman-online-desktop.svg" alt="">
+      
+    </div>
+    <div class="conteudo_texto">
+      <h1>FAQ</h1>
+
+      <p class="paragrafo1"><b>How many team members can I invite?</b><button  id="seta"><img id="setaimg" src="/images/icon-arrow-down.svg" alt=""></button></p> 
+      <div id="texto">You can invite up to 2 additional users on the Free plan. There is no limit on 
+      team members for the Premium plan.</div>
+    
+      <p><b>What is the maximum file upload size?</b><button  id="seta2"><img id="setaimg2" src="/images/icon-arrow-down.svg" alt=""></button></p>
+      <div id="texto2">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+    
+      <p><b>How do I reset my password?</b><button  id="seta3"><img id="setaimg3" src="/images/icon-arrow-down.svg" alt=""></button></p>
+      <div id="texto3">Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.</div>
+    
+      <p><b>Can I cancel my subscription?</b><button  id="seta4"><img id="setaimg4" src="/images/icon-arrow-down.svg" alt=""></button></p>
+      <div id="texto4">Yes! Send us a message and we’ll process your request no questions asked.</div>
+    
+      <p><b>Do you provide additional support?</b><button  id="seta5"><img id="setaimg5" src="/images/icon-arrow-down.svg" alt=""></button></p>
+      <div id="texto5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+    </div>
+  </div>  
+</div>
+
+<script src="script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
