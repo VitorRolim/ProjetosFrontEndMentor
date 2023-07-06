@@ -1,0 +1,118 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+/*Resetando CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    height: 100vh;
+    width: 100vw;
+    padding: 90px 150px 150px 150px;
+}
+
+/*Distanciando a logo em cima do titulo*/
+.logo{
+    margin-bottom: 20vh;
+}
+
+h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 0px;
+}
+/*Colorindo o title de h1*/
+.color_title_h1{
+    color: hsl(0, 93%, 68%);
+    font-size: 100px;
+    font-weight:lighter;
+}
+/*Colorindo o title de p*/
+.color_title_p{
+    color: hsl(0, 93%, 68%);
+}
+
+p{
+    
+    margin-top: 30px;
+}
+
+/*Estilizando o campo do email*/
+#email{
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-left: 15px;
+    height: 30px;
+    width: 350px;
+    border: 1px solid rgb(128, 128, 128, 0.5);
+}
+
+/*Criando o botao error*/
+#erroricn{
+    margin: 33px 0px 0px -70px;
+    position: absolute;
+    display: none;
+}
+
+/*Criando o botão do submit*/
+#btnSubmit{
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-left: -40px;
+    background-color: hsl(0, 36%, 70%);
+}
+
+#btnSubmit:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px hsl(0, 36%, 70%);
+}
+
+/*Mudando a cor do invalid*/
+
+
+/*Criando a imagem ao lado do texto*/
+.imagem{
+    background-image: url(/images/hero-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/*FAZENDO RESPONSIVIDADE*/
+@media(max-width: 1200px){
+    #container{
+        height: 200vh;
+        flex-direction: column;
+
+    }
+    .imagem{
+        background-image: url(/images/hero-mobile.jpg);
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+    }
+
+    
+}
