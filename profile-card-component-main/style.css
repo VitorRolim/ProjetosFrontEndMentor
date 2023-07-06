@@ -1,0 +1,82 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+
+
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+
+body{
+        background-image: url(/images/bg-pattern-top.svg);
+        background-color: hsl(185, 75%, 39%);
+        font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*criando o container*/
+#container{
+    display: flex;
+    height: 100vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+/*criando o conteudo dentro do container*/
+.conteudo{
+    height: 30vh;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    z-index: -2;
+    border-radius: 15px;
+    box-shadow: 5px 10px #272932;
+}
+
+/*estilizando o fundo do conteudo*/
+.fundo{
+    position: absolute;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    z-index: -1;
+}
+
+/*Estilizando a foto*/
+.profilePhoto{
+   margin: 40px 0px 10px 0px;
+   border-radius: 50px;
+   border: 5px solid white;
+}
+
+/*Estilizando a lista*/
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 10px 0px 0px 30px;
+
+}
+
+li{
+    padding-right: 20px;
+}
+
+.p1{
+    margin-bottom: 10px;
+}
+
+

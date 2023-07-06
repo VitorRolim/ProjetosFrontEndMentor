@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+/*Css reset*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+
+      background-color: hsl(0, 0%, 95%);
+
+    }
+/*Criando o container das div*/
+    #container {
+      display: flex;
+      height: 100vh;
+      width: 55vw;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*Centralizando os conteudos da div sedan, suv e luxuary*/
+    p {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      padding: 30px 15px 15px 15px;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px;
+    }
+
+    .sedanImg,.suvImg,.luxuaryImg{
+      padding-left: 15px;
+    }
+
+    
+    
+    /*Criando os conteudos do main*/
+    .sedan{
+      height: 50vh;
+      padding: 30px;
+      background-color: hsl(31, 77%, 52%);
+      color: hsla(0, 0%, 100%, 0.75);
+      border-radius: 15px 0px 0px 15px;
+    }
+
+    .suv{
+      height: 50vh;
+      padding: 30px;
+      background-color: hsl(184, 100%, 22%);
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .luxuary{
+      height: 50vh;
+      border-radius: 0px 15px 15px 0px;
+      padding: 30px;
+      background-color: hsl(179, 100%, 13%);
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+
+/*Estilizando os botões da div*/
+    .btn1{
+      margin: 90px 15px 15px 20px;
+      height: 50px;
+      width: 120px;
+      padding: 3px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      color: hsl(31, 77%, 52%);
+    }
+
+    .btn2{
+      margin: 90px 15px 15px 20px;
+      height: 50px;
+      width: 120px;
+      padding: 3px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      color: hsl(184, 100%, 22%);
+    }
+
+    .btn3{
+      margin: 90px 15px 15px 20px;
+      height: 50px;
+      width: 120px;
+      padding: 3px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      color: hsl(179, 100%, 13%);
+    }
+
+    button:hover{
+      cursor: pointer;
+    }
+    /*Tornando a página responsiva*/
+    @media ( max-width:600px) {
+        #container{
+          flex-direction: column;
+          height: 160vh;
+        }
+
+        .sedan{
+          border-radius: 15px 15px 0px 0px;
+        }
+
+        .btn1, .btn2, .btn3{
+          margin: 30px 15px 15px 10px;
+        }
+
+        .luxuary{
+          border-radius: 0px 0px 15px 15px;
+        }
+
+    }
+
+    @media (min-width:600px){
+          .btn1, .btn2{
+          margin-top: 10px;
+        }
+
+        .btn3{
+          margin-top: 1px;
+        }
+        }
+
+  </style>
+</head>
+
+<body>
+  <main id="container">
+
+    <div class="sedan">
+
+      
+      <img class="sedanImg" src="/images/icon-sedans.svg" alt="sedan carro">
+
+      <h2>Sedans</h2>
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+        or on your next road trip.</p>
+      <button class="btn1">Learn more</button>
+
+
+    </div>
+
+    <div class="suv">
+
+      <img class="suvImg" src="/images/icon-suvs.svg" alt="suv carro">
+
+
+      <h2>SUVs</h2>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+        and off-road adventures.</p>
+        <button class="btn2">Learn more</button>
+    </div>
+
+    <div class="luxuary">
+
+      <img class="luxuaryImg" src="/images/icon-luxury.svg" alt="luxo carro">
+
+
+      <h2>Luxury</h2>
+      <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+        rental and arrive in style.</p>
+        <button class="btn3">Learn more</button>
+    </div>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Vitor Ramos</a>.
+  </div>
+</body>
+
+</html>
