@@ -10,12 +10,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #container{
     display: flex;
-    height: 70vh;
-    width: 80vw;
-    margin: 150px 0px 0px 200px;
+    height: 60vh;
+    width: 60vw;
+    margin: 150px 0px 0px 370px;
     border: 2px solid blue;
+    flex-wrap: wrap;
+}
+
+#box1{
+    height: 30vh;
+    width: 100vw;
+    border: 2px solid green;
+    padding: 50px 50px 0px 50px;
+}
+
+#box2{
+    height: 30vh;
+    width: 30vw;
+    border: 2px solid red;
+}
+
+#box3{
+    height: 30vh;
+    width: 29.5vw;
+    border: 2px solid yellow;
 }
