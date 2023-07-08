@@ -68,7 +68,7 @@ body{
     width: 14vw;
     background-color: hsl(71, 73%, 54%);
     border: none;
-    box-shadow: 2px 5px 3px blac;
+    box-shadow: 2px 5px 3px black;
     color: white;
 }
 #btn:hover{
