@@ -12,4 +12,112 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+
 }
+
+
+
+/*Criando o container da pagina*/
+#container{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+}
+
+/*Personalizando a logo*/
+.logo{
+    margin: 100px 0px 40px 0px;
+}
+
+/*Personalizando a imagem*/
+.imagem{
+    width: 800px;
+    display: block;
+}
+
+/*Estilzando os textos*/
+h1{
+    font-weight: 100;
+    color: gray;
+}
+
+b{
+    color: black;
+}
+
+h3{
+    font-weight: 100;
+    margin: 20px 0px 40px 0px;
+}
+
+#formulario{
+    margin-bottom: 100px;
+}
+
+/*Redimensionando o botão email*/
+
+#email{
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+    padding-left: 20px;
+    border: 1px solid gray;
+}
+/*Redimensionando o botão submit*/
+#btn{
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    background-color: hsl(223, 52%, 63%);
+    color: white;
+    border: none;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-color: hsl(223, 69%, 75%);
+}
+
+.smimg{
+    width: 30px;
+    margin: 100px 0px 10px 0px;
+}
+
+/*Cria o texto de erro*/
+#areatexto{
+    display: none;
+    margin: 10px 0px 50px 220px;
+    text-align: left;
+    color: red;
+}
+
+/*Criando página responsiva*/
+@media(max-width: 600px){
+    #container{
+        height: 130vh;
+        width: 100vw;
+    }
+
+    #email{
+        margin: 0px 0px 20px 2px;
+    }
+
+    .imagem{
+        width: 300px;
+        margin: 0px 0px 0px 50px;
+    }
+
+    #btn{
+        width: 300px;
+        margin: 20px 0px 0px 2px;
+    }
+
+    #areatexto{
+        position: absolute;
+        margin: -70px 0px 0px 80px;
+    }
+}
+
